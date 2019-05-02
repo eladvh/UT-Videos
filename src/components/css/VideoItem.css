@@ -1,0 +1,19 @@
+.wrapper{
+
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.box1 .thumb {
+  float:left;
+  margin-right: 10px;
+  margin-top:10px;
+  margin-bottom: 15px;
+}

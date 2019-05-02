@@ -1,0 +1,10 @@
+.videoPlayer{
+  width:854px;
+  height:480px;
+}
+
+.text {
+  border:2px solid #eee;
+  padding-left:10px;
+  width: 844px;
+}

@@ -1,0 +1,13 @@
+.ui_grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+}
+
+.ui_video {
+  padding-left: 15%;
+}
+
+.ui_list {
+  
+}
