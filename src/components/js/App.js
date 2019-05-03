@@ -1,8 +1,9 @@
 import React from 'react';
+import UserLocation from './UserLocation';
 import SearchBar from './SearchBar';
 import youtube from '../../apis/youtube'
 import VideoList from './VideoList';
-import VideoDetail from './VideoDetail'
+import VideoDetail from './VideoDetail';
 import 'font-awesome/css/font-awesome.min.css';
 import '../css/App.css';
 
@@ -32,7 +33,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="ui">
+        <UserLocation /><br/>
         <SearchBar onFormSubmit={this.onTermSubmit} /><br />
         <div className="ui_grid">
             <div className="ui_video">
