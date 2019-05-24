@@ -1,0 +1,29 @@
+.container{
+  width:90%
+}
+
+.comment {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  float:left;
+}
+
+.author{
+  float: left;
+}
+
+.content{
+  padding-left: 60px;
+}
+
+.metaData {
+  float: left;
+  padding-left: 5px;
+}
+
+.commentText{
+  word-wrap: break-word;
+  width:60%;
+}
