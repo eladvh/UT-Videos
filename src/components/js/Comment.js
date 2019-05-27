@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/Comment.css';
 
 const Comment = props => {
-  console.log(props);
+  
   return(
     <div>
       <div className="container">
