@@ -14,12 +14,12 @@ class App extends React.Component {
   state = {
     videos: [],
     selectedVideo: null,
-    commentsArr: null
+    //commentsArr: null
   };
 
   componentDidMount() {
     this.onTermSubmit('new')
-    this.makeCommentArr();
+    //this.makeCommentArr();
   }
 
   onTermSubmit = async term => {
@@ -40,7 +40,7 @@ class App extends React.Component {
     window.scrollTo(0, 0);
   }
 
-  makeCommentArr = () => {
+  /*makeCommentArr = () => {
     var array = []
     const rand = Math.floor(Math.random() * 10) + 1
     for (let index = 0; index < rand; index++) {
@@ -52,10 +52,10 @@ class App extends React.Component {
       })
     }
     this.setState({ commentsArr: array })
-  }
+  }*/
 
   render() {
-    const array = this.state.commentsArr
+    /*const array = this.state.commentsArr
     var element = array != null ? (array.map((comment, key) => {
       return <Comment
         author={comment.author}
@@ -65,7 +65,18 @@ class App extends React.Component {
         key={key}
       />
     })) : null
+*/
 
+    let comments = [];
+    const rand  = Math.floor(Math.random() * 20) + 1;
+    for (let i=0; i < rand; i++) {
+      comments.push(<Comment 
+        author={faker.name.firstName()}
+        timeAgo={faker.date.past().toString()}
+        content={faker.lorem.sentence()}
+        avatar={faker.image.avatar()}
+        key={i} />)
+    }
 
     return (
       <div className="ui">
@@ -81,7 +92,7 @@ class App extends React.Component {
           <div>
             <NewComment />
             <br /><br />
-            {element}
+            {comments}
           </div>
         </div>
       </div>
